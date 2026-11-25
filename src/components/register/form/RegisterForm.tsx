@@ -23,6 +23,11 @@ export const RegisterForm = () => {
 
   const [step, setStep] = useState<FormStep |3>(0)
 
+  const submit = (values: RegisterValues) => {
+
+    console.log(values)
+    setStep(3);
+  }
   
 
   const handleBack = () => {
@@ -33,6 +38,9 @@ export const RegisterForm = () => {
 
   const handleSubmit = (event:React.SubmitEvent<HTMLFormElement>) => {
     event.preventDefault()
+
+
+    if(step===2) return form.handleSubmit(submit)(event)
     
     const nextStep= step=== 0? 1: 2
     

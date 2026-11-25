@@ -19,4 +19,8 @@ declare global {
   };
 
   type RegistrationFieldProps<Name extends FieldPath<RegisterValues>> = { control: Control<RegisterValues>; name: Name };
+
+  type StepComponentProps = { form: UseformReturn<RegisterValues> }
+  
+  type RegisterationFieldProps= {control: Control<RegisterValues>, name: T}
 }
