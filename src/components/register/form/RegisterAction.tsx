@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 type RegisterActionProps = {
-    step: FormStep
+    step: FormStep | 3
     onBack: () => void;
 }
 

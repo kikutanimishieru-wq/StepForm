@@ -1,8 +1,13 @@
 import type { RegisterValues } from "@/schemas";
 import type { Control, FieldPath } from "react-hook-form";
+import { z } from "zod"
+import {UseformReturn} from "react-hook-form"
+
 
 declare global {
   type FormStep = 0 | 1 | 2;
+
+  type RegisterValues= z.infer<typeof fieldValues>
 
   type UploadResult = { url: string };
 

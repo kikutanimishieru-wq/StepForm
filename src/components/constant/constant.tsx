@@ -9,14 +9,17 @@ export const STEPS = [
 
 export const copy = {
   0: {
+    step: "Step 1 of 3",
     title: "Let’s start with you.",
     description: "A few details to make this space your own.",
   },
   1: {
+    step: "Step 2 of 3",
     title: "Keep it just yours.",
     description: "A strong password for everything that’s ahead.",
   },
   2: {
+    step: "Step 3 of 3",
     title: "Make yourself at home.",
     description: "The finishing touches. A little personality goes a long way.",
   },
