@@ -6,14 +6,14 @@ type RegisterActionProps = {
 
 export const RegisterAction = ({step, onBack}: RegisterActionProps ) => {
   return (
-     <div>
+     <div className="flex gap-3">
       {step > 0 && (
         <Button
                   type="button"
                   onClick={onBack}
                   
           
-          className="mt-4 h-11 w-full bg-purple-400 text-slate-950 hover:bg-purple-300"
+          className="flex flex-1 mt-4 h-11 w-full bg-purple-400 text-slate-950 hover:bg-purple-300"
         >
           Back
         </Button>
@@ -21,7 +21,7 @@ export const RegisterAction = ({step, onBack}: RegisterActionProps ) => {
 
       <Button
         type="submit"
-        className="mt-4 h-11 w-full bg-purple-400 text-slate-950 hover:bg-purple-300"
+        className="flex  flex-3  mt-4 h-11 w-full bg-purple-400 text-slate-950 hover:bg-purple-300"
       >
         Continue
       </Button>

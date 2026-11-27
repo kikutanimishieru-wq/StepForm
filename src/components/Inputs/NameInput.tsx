@@ -10,7 +10,7 @@ export const NameInput = ({ control, name }: RegisterationFieldProps) => {
 
   return (
      <Field className={fieldState.invalid?"text-red-500 gap-2":"gap-2"}>
-      <FieldLabel htmlFor="username"> {isFirstname ? "Fist name" : "Last name "}</FieldLabel>
+      <FieldLabel htmlFor="username" className='mt-5'> {isFirstname ? "Fist name" : "Last name "}</FieldLabel>
       
 
       <Input id={field.name} {...field}

@@ -16,7 +16,7 @@ export const StepIndicator = ({Icon, label, number, step}: StepIndicatorProps) =
           <span 
           className={cn
           ("size-6 rounded-full flex justify-center items-center pos", 
-          step>number ? "bg-pink-500" :"bg-black")}>
+          step>number ?" bg-[#c5a6ff]":"bg-black")}>
             {step >= number  ?
             <Check/> : number}
           </span>

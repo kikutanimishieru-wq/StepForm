@@ -65,7 +65,7 @@ export const RegisterForm = () => {
           <p id="email-hint" className="mt-2 text-xs text-[#c3b7d4]">
             A little connection starts with the right address.
           </p>
-            <RegisterAction step={step} onBack={handleBack } />
+            <RegisterAction  step={step} onBack={handleBack }  />
        
           </div>
           </form>
